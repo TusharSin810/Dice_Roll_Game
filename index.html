@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/dice6.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Roll</h1>
+      <h2></h2> 
+       
+      <div class="board">
+          <div class="dice">
+            <p class="player-name" id="player1" contenteditable="true" onkeydown="limitInputLength(event, this, 15); updateName(1)">Player 1</p>
+            <img class="img1" src="./images/dice1.png" />
+          </div>
+
+          <div class="dice">
+            <p class="player-name" id="player2" contenteditable="true" onkeydown="limitInputLength(event, this, 15); updateName(2)">Player 2</p>
+            <img class="img2" src="./images/dice2.png" />
+          </div>
+
+          <div class="dice">
+            <p class="player-name" id="player3" contenteditable="true" onkeydown="limitInputLength(event, this, 15); updateName(3)">Player 3</p>
+            <img class="img3" src="./images/dice3.png" />
+          </div>
+
+          <div class="dice">
+            <p class="player-name" id="player4" contenteditable="true" onkeydown="limitInputLength(event, this, 15); updateName(4)">Player 4</p>
+            <img class="img4" src="./images/dice4.png" />
+          </div>
+      </div>
+    </div>
+    
+    <footer>Made By - <a href="https://www.linkedin.com/in/tushar-singhal-921a41259/" target="_blank" style="color: yellow;">Tushar Singhal</a> </footer>
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
