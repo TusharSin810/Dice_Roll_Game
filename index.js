@@ -79,6 +79,6 @@ function getPlayerName(playerIndex){
 // Initialize: Roll dice and determine winner/draw on page load
 window.onload = function() {
     loadNames();
-    updateDiceImages();
+    document.getElementById('playButton').addEventListener('click', updateDiceImages);
 };
 
